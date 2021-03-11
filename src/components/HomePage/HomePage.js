@@ -201,6 +201,8 @@ const NavLink = styled.div`
   }
 
   @media screen and (max-width: 960px) {
+    padding: 0;
+    margin: 40px;
     &:hover {
       color: goldenrod;
       transition: all 0.2s ease;
