@@ -188,7 +188,7 @@ const Navmenu = styled.div`
 
 const NavLink = styled.div`
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
