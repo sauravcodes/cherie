@@ -55,7 +55,7 @@ const Content = styled.div`
 
   @media screen and (max-width: 960px) {
     width: 250px;
-    top: 15%;
+    top: 5%;
     .heading {
       font-size: 2.5rem;
       margin-bottom: 6px;

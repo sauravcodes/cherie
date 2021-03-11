@@ -7,12 +7,9 @@ import { ImagesData } from "../ImagesData/ImagesData.js";
 
 const HomePage = ({ slides }) => {
   const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
 
+  const length = slides.length;
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -20,6 +17,8 @@ const HomePage = ({ slides }) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  const handleClick = () => setClick(!click);
 
   return (
     <ParentDiv>
@@ -176,7 +175,7 @@ const Navmenu = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    height: 88vh;
+    height: 91vh;
     top: 80px;
     left: ${(props) => (props.click ? 0 : "-100%")};
     width: 80%;
