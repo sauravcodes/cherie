@@ -253,6 +253,7 @@ const ParentDiv = styled.div`
     height: 100vh;
     width: 100vw;
     border-radius: 1px;
+    image-rendering: pixelated;
   }
   .slide {
     opacity: 0.5;
@@ -263,5 +264,14 @@ const ParentDiv = styled.div`
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1);
+  }
+
+  @media screen and (max-width: 960px) {
+    & img {
+      display: flex;
+      object-fit: cover;
+      border-radius: 0px;
+      image-rendering: pixelated;
+    }
   }
 `;

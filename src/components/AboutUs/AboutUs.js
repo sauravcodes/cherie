@@ -36,7 +36,7 @@ const Content = styled.div`
   justify-content: center;
   color: goldenrod;
   position: absolute;
-  top: 12%;
+  top: 10%;
   left: 10%;
   font-family: "Indie Flower", cursive;
   width: 500px;
@@ -54,8 +54,8 @@ const Content = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    width: 250px;
-    top: 5%;
+    width: 240px;
+    top: 7%;
     .heading {
       font-size: 2.5rem;
       margin-bottom: 6px;
